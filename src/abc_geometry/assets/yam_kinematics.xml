@@ -1,0 +1,70 @@
+<!--
+  Minimal kinematic-only I2RT YAM model.
+
+  The body transforms, joint axes/ranges, inertials, and grasp_site transform
+  are copied from amazon-far/abc:
+  assets/put_bottles/assets/i2rt_yam/yam.xml
+  revision 6bc6586721cf0c409ccee80f675a28de9b9b2f5e
+
+  Meshes, collision geometry, fingers, actuators, and simulation-only elements
+  are deliberately omitted. See LICENSE.i2rt-yam alongside this file.
+-->
+<mujoco model="yam_kinematics">
+  <compiler angle="radian"/>
+
+  <worldbody>
+    <body name="arm">
+      <body name="link_1" pos="0 0 0.0631" quat="1 0 0 1">
+        <inertial pos="-0.00192861 -0.00795735 0.0208176"
+                  quat="0.297851 0.642634 0.360045 0.607185"
+                  mass="0.12415"
+                  diaginertia="0.000180751 0.000145532 5.89179e-05"/>
+        <joint name="joint1" type="hinge" axis="0 0 1" range="-2.61799 3.05433"/>
+
+        <body name="link_2" pos="2.5e-05 -0.02 0.0409" quat="1 1 1 1">
+          <inertial pos="0.132008 2.10599e-06 0.000293073"
+                    quat="1 1 1 1"
+                    mass="1.24434"
+                    diaginertia="0.0121902 0.0121318 0.000683304"/>
+          <joint name="joint2" type="hinge" axis="0 0 1" range="0 3.66519"/>
+
+          <body name="link_3" pos="0.264 0 0" quat="0 1 0 0">
+            <inertial pos="-0.121816 -0.054846 -0.000111108"
+                      quat="1 1 1 1"
+                      mass="0.853698"
+                      diaginertia="0.00699732 0.00696112 0.000788244"/>
+            <joint name="joint3" type="hinge" axis="0 0 1" range="0 3.66519"/>
+
+            <body name="link_4" pos="-0.245 -0.06 0" quat="1 0 0 0">
+              <inertial pos="-0.0769778 -0.0527104 0.000154878"
+                        quat="0.667 0.667 -0.236 -0.236"
+                        mass="0.463511"
+                        diaginertia="0.000791532 0.000744733 0.000282116"/>
+              <joint name="joint4" type="hinge" axis="0 0 1" range="-1.5708 1.5708"/>
+
+              <body name="link_5" pos="-0.074 -0.0395 2.5e-05" quat="1 -1 1 1">
+                <inertial pos="3.64861e-05 0.00025665 0.0353526"
+                          quat="1 0 0 0"
+                          mass="0.350962"
+                          diaginertia="0.000197802 0.0001775 0.000147402"/>
+                <joint name="joint5" type="hinge" axis="0 0 1" range="-1.5708 1.5708"/>
+
+                <body name="link_6" pos="0 0.0353 0.0395" quat="1 -1 0 0">
+                  <inertial pos="-0.000217767 7.37059e-05 0.0270545"
+                            quat="1 1 0 0"
+                            mass="0.367476"
+                            diaginertia="0.000265958 0.000242686 0.000227409"/>
+                  <joint name="joint6" type="hinge" axis="0 0 1" range="-2.0944 2.0944"/>
+                  <site name="grasp_site"
+                        pos="0 0 0.1347"
+                        quat="1 0 0 -1"
+                        size="0.005"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

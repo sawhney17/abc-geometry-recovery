@@ -1,0 +1,177 @@
+{
+  "created_at": "2026-08-10T03:45:51.649157+00:00",
+  "generator": {
+    "name": "abc-geometry-recovery",
+    "version": "0.1.0"
+  },
+  "geometry": {
+    "confidence": "deterministic when the corresponding valid_mask bit is set",
+    "derivation": "deterministic forward kinematics from six arm joints",
+    "derivation_failure_counts": {
+      "action.left_arm": 0,
+      "action.right_arm": 0,
+      "observation.left_arm": 0,
+      "observation.right_arm": 0
+    },
+    "derivation_failure_mask_bits": {
+      "action.left_arm": 2,
+      "action.right_arm": 3,
+      "observation.left_arm": 0,
+      "observation.right_arm": 1
+    },
+    "excluded_frames": {
+      "shared_bimanual": "not emitted: right-base calibration is not cohort-verified for the source shard"
+    },
+    "field_provenance": "derived_fk",
+    "frames": {
+      "arm_local": "the selected arm's YAM base frame"
+    },
+    "invalid_input_counts": {
+      "action.left_arm": 0,
+      "action.right_arm": 0,
+      "observation.left_arm": 0,
+      "observation.right_arm": 0
+    },
+    "invalid_input_mask_bits": {
+      "action.left_arm": 2,
+      "action.right_arm": 3,
+      "observation.left_arm": 0,
+      "observation.right_arm": 1
+    },
+    "kinematics_model": "amazon-far/abc@6bc6586721cf0c409ccee80f675a28de9b9b2f5e#sha256:2e54ad7f4d8b8e972cb66f869fb656b7564917324ca8a895508dc8b180edbf6c",
+    "kinematics_model_sha256": "2e54ad7f4d8b8e972cb66f869fb656b7564917324ca8a895508dc8b180edbf6c",
+    "kinematics_source_revision": "amazon-far/abc@6bc6586721cf0c409ccee80f675a28de9b9b2f5e",
+    "pose_layout": [
+      "x_m",
+      "y_m",
+      "z_m",
+      "qw",
+      "qx",
+      "qy",
+      "qz"
+    ],
+    "quaternion_convention": "Hamilton scalar-first (wxyz)",
+    "source_vector_layout": {
+      "action.left_arm": {
+        "column": "action",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "units": "radians"
+      },
+      "action.right_arm": {
+        "column": "action",
+        "indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "units": "radians"
+      },
+      "observation.left_arm": {
+        "column": "observation.state",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "units": "radians"
+      },
+      "observation.right_arm": {
+        "column": "observation.state",
+        "indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "units": "radians"
+      }
+    },
+    "valid_counts": {
+      "action.left_arm": 384567,
+      "action.right_arm": 384567,
+      "observation.left_arm": 384567,
+      "observation.right_arm": 384567
+    },
+    "valid_mask_bits": {
+      "action.left_arm": 2,
+      "action.right_arm": 3,
+      "observation.left_arm": 0,
+      "observation.right_arm": 1
+    }
+  },
+  "output": {
+    "format": "parquet",
+    "rows": 384567,
+    "sha256": "268b26276a7fb345017c96b25db4eb586a70c05c2c1fc9c07741b32629ff3da9",
+    "uri": "https://github.com/sawhney17/abc-geometry-recovery/releases/download/v0.1.0/abc-geometry-file-000.parquet"
+  },
+  "schema_version": "abc-geometry-sidecar/v1",
+  "source": {
+    "dataset_id": "lerobot/abc_130k_v3_train",
+    "feature_contract": {
+      "codebase_version": "v3.0",
+      "expected_names": {
+        "action": [
+          "left_arm_action_1",
+          "left_arm_action_2",
+          "left_arm_action_3",
+          "left_arm_action_4",
+          "left_arm_action_5",
+          "left_arm_action_6",
+          "left_gripper_action",
+          "right_arm_action_1",
+          "right_arm_action_2",
+          "right_arm_action_3",
+          "right_arm_action_4",
+          "right_arm_action_5",
+          "right_arm_action_6",
+          "right_gripper_action"
+        ],
+        "observation.state": [
+          "left_arm_joint_1",
+          "left_arm_joint_2",
+          "left_arm_joint_3",
+          "left_arm_joint_4",
+          "left_arm_joint_5",
+          "left_arm_joint_6",
+          "left_gripper",
+          "right_arm_joint_1",
+          "right_arm_joint_2",
+          "right_arm_joint_3",
+          "right_arm_joint_4",
+          "right_arm_joint_5",
+          "right_arm_joint_6",
+          "right_gripper"
+        ]
+      },
+      "sha256": "6c28ba76ecd04adcd3f198208c3a588ef18ab46f4f30f31897d7d90d4243914b",
+      "status": "verified_info_json",
+      "uri": "hf://datasets/lerobot/abc_130k_v3_train@68651e4929d9fb00f798937b2d62617cab5c771d/meta/info.json"
+    },
+    "files": [
+      {
+        "rows": 384567,
+        "sha256": "919e4b62ab2c154e242436a818cc3589fa3880f555fef5448a22e06f8238d227",
+        "size_bytes": 49858968,
+        "uri": "hf://datasets/lerobot/abc_130k_v3_train@68651e4929d9fb00f798937b2d62617cab5c771d/data/chunk-000/file-000.parquet"
+      }
+    ],
+    "modified": false,
+    "revision": "68651e4929d9fb00f798937b2d62617cab5c771d"
+  }
+}

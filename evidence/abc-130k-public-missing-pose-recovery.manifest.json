@@ -1,0 +1,324 @@
+{
+  "created_at": "2026-08-10T04:34:01.374725+00:00",
+  "generator": {
+    "name": "abc-geometry-recovery",
+    "version": "0.1.0"
+  },
+  "geometry": {
+    "fk_status_counts": {
+      "derived": 314081
+    },
+    "frame": "arm_local",
+    "invalid_pose_encoding": "seven NaN values; geometry.fk_status and status_mask are authoritative",
+    "joint_status_counts": {
+      "intact": 314081
+    },
+    "kinematics_model": "amazon-far/abc@6bc6586721cf0c409ccee80f675a28de9b9b2f5e#sha256:2e54ad7f4d8b8e972cb66f869fb656b7564917324ca8a895508dc8b180edbf6c",
+    "kinematics_model_sha256": "2e54ad7f4d8b8e972cb66f869fb656b7564917324ca8a895508dc8b180edbf6c",
+    "kinematics_source_revision": "amazon-far/abc@6bc6586721cf0c409ccee80f675a28de9b9b2f5e",
+    "pose_layout": [
+      "x_m",
+      "y_m",
+      "z_m",
+      "qw",
+      "qx",
+      "qy",
+      "qz"
+    ],
+    "quaternion_convention": "Hamilton scalar-first (wxyz)",
+    "recovery_status_counts": {
+      "recovered": 314081
+    },
+    "shared_bimanual_transform_emitted": false,
+    "site": "grasp_site",
+    "source_pose_status_counts": {
+      "missing": 314081
+    },
+    "status_mask_bits": {
+      "fk_valid": 2,
+      "joints_intact": 1,
+      "recovered": 3,
+      "source_pose_intact": 0
+    }
+  },
+  "output": {
+    "columns": [
+      "provenance.source_uri",
+      "provenance.source_sha256",
+      "provenance.task",
+      "provenance.episode",
+      "provenance.topic",
+      "provenance.log_time_ns",
+      "provenance.publish_time_ns",
+      "provenance.sequence",
+      "provenance.source_message_index",
+      "source.arm",
+      "source.stream",
+      "source.pose_status",
+      "source.joint_status",
+      "geometry.fk_status",
+      "geometry.recovery_status",
+      "geometry.status_mask",
+      "geometry.recovered",
+      "geometry.pose.arm_local"
+    ],
+    "format": "parquet",
+    "manifest_uri": "https://github.com/sawhney17/abc-geometry-recovery/releases/download/v0.1.0/abc-130k-public-missing-pose-recovery.manifest.json",
+    "rows": 314081,
+    "sha256": "511bc785df6df8a080e97530f991669f3527444a2bcfddb4816846f0bb97bcb6",
+    "uri": "https://github.com/sawhney17/abc-geometry-recovery/releases/download/v0.1.0/abc-130k-public-missing-pose-recovery.parquet"
+  },
+  "publication": {
+    "strategy": "staged atomic rename; manifest is commit marker",
+    "verify": "sha256(output) must equal output.sha256"
+  },
+  "schema_version": "abc-raw-pose-recovery/v1",
+  "source": {
+    "dataset_id": "Voxel51/ABC-130k",
+    "files": [
+      {
+        "episode": "episode_e55cc103-bbdb-4ea8-99e9-86261cde32f2",
+        "expected_identity": {
+          "sha256": "045e2cea43138d529f9d29dd5cc873102d1f27edf874e2c244133c6f0c8fd90f",
+          "size_bytes": 74094750,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 129714
+        },
+        "joint_status_counts": {
+          "intact": 129714
+        },
+        "recovery_status_counts": {
+          "recovered": 129714
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "045e2cea43138d529f9d29dd5cc873102d1f27edf874e2c244133c6f0c8fd90f",
+        "size_bytes": 74094750,
+        "source_pose_status_counts": {
+          "missing": 129714
+        },
+        "target_messages": 129714,
+        "task": "fold_a_paper_plane_with_a_square_sheet_of_paper_pick_it_up_from_the_middle",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/fold_a_paper_plane_with_a_square_sheet_of_paper_pick_it_up_from_the_middle/episode_e55cc103-bbdb-4ea8-99e9-86261cde32f2/episode.fo.mcap"
+      },
+      {
+        "episode": "episode_c7fbe5d9-5cef-4b6c-9be7-552d02680a79",
+        "expected_identity": {
+          "sha256": "63827d67b1e392b864e74d5cd3975a09b8fed68d58e24002591dafe78bc6e74e",
+          "size_bytes": 82905877,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 121163
+        },
+        "joint_status_counts": {
+          "intact": 121163
+        },
+        "recovery_status_counts": {
+          "recovered": 121163
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "63827d67b1e392b864e74d5cd3975a09b8fed68d58e24002591dafe78bc6e74e",
+        "size_bytes": 82905877,
+        "source_pose_status_counts": {
+          "missing": 121163
+        },
+        "target_messages": 121163,
+        "task": "fold_the_inside_out_t_shirt",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/fold_the_inside_out_t_shirt/episode_c7fbe5d9-5cef-4b6c-9be7-552d02680a79/episode.fo.mcap"
+      },
+      {
+        "episode": "episode_fffa456e-057a-4898-9f09-2361e52dba1a",
+        "expected_identity": {
+          "sha256": "d5786da86d39fa7761a5a09edb37325e2f8f8367f94911fe1ab7d4c19889d142",
+          "size_bytes": 55281674,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 11124
+        },
+        "joint_status_counts": {
+          "intact": 11124
+        },
+        "recovery_status_counts": {
+          "recovered": 11124
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "d5786da86d39fa7761a5a09edb37325e2f8f8367f94911fe1ab7d4c19889d142",
+        "size_bytes": 55281674,
+        "source_pose_status_counts": {
+          "missing": 11124
+        },
+        "target_messages": 11124,
+        "task": "insert_the_plug",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/insert_the_plug/episode_fffa456e-057a-4898-9f09-2361e52dba1a/episode.fo.mcap"
+      },
+      {
+        "episode": "episode_f2424b5e-bde5-41ff-9993-1e409355f68a",
+        "expected_identity": {
+          "sha256": "6e114d1fe5f2ccb19799038773124d37cd05a9f8b249ad5bcd0bf62261e857ab",
+          "size_bytes": 76904033,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 12628
+        },
+        "joint_status_counts": {
+          "intact": 12628
+        },
+        "recovery_status_counts": {
+          "recovered": 12628
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "6e114d1fe5f2ccb19799038773124d37cd05a9f8b249ad5bcd0bf62261e857ab",
+        "size_bytes": 76904033,
+        "source_pose_status_counts": {
+          "missing": 12628
+        },
+        "target_messages": 12628,
+        "task": "organize_the_sunglasses",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/organize_the_sunglasses/episode_f2424b5e-bde5-41ff-9993-1e409355f68a/episode.fo.mcap"
+      },
+      {
+        "episode": "episode_ed9685d6-e42b-44a8-8a1d-352488ed4bc0",
+        "expected_identity": {
+          "sha256": "479f31f3080a02a1ddbbddce587c17f93b1640102eeb77c580f502bb6046878e",
+          "size_bytes": 91787720,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 14040
+        },
+        "joint_status_counts": {
+          "intact": 14040
+        },
+        "recovery_status_counts": {
+          "recovered": 14040
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "479f31f3080a02a1ddbbddce587c17f93b1640102eeb77c580f502bb6046878e",
+        "size_bytes": 91787720,
+        "source_pose_status_counts": {
+          "missing": 14040
+        },
+        "target_messages": 14040,
+        "task": "pack_up_the_instrument_practice_props",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/pack_up_the_instrument_practice_props/episode_ed9685d6-e42b-44a8-8a1d-352488ed4bc0/episode.fo.mcap"
+      },
+      {
+        "episode": "episode_c38173da-a486-47d4-a859-cde506ccb672",
+        "expected_identity": {
+          "sha256": "06fa04215b7ea7fdee560f1b970ae7e01b9301941c14111b7daae93d091ebd32",
+          "size_bytes": 29091510,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 5220
+        },
+        "joint_status_counts": {
+          "intact": 5220
+        },
+        "recovery_status_counts": {
+          "recovered": 5220
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "06fa04215b7ea7fdee560f1b970ae7e01b9301941c14111b7daae93d091ebd32",
+        "size_bytes": 29091510,
+        "source_pose_status_counts": {
+          "missing": 5220
+        },
+        "target_messages": 5220,
+        "task": "place_and_organize_the_stuffed_toys_onto_the_shelf",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/place_and_organize_the_stuffed_toys_onto_the_shelf/episode_c38173da-a486-47d4-a859-cde506ccb672/episode.fo.mcap"
+      },
+      {
+        "episode": "episode_9b4ab142-9dd4-491b-b383-ebf941988f97",
+        "expected_identity": {
+          "sha256": "fbb1144968969ab961ac40c424907df8db81a716702e5b6b354105acf0b8b5ce",
+          "size_bytes": 70541126,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 13520
+        },
+        "joint_status_counts": {
+          "intact": 13520
+        },
+        "recovery_status_counts": {
+          "recovered": 13520
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "fbb1144968969ab961ac40c424907df8db81a716702e5b6b354105acf0b8b5ce",
+        "size_bytes": 70541126,
+        "source_pose_status_counts": {
+          "missing": 13520
+        },
+        "target_messages": 13520,
+        "task": "place_the_wine_glass_upside_down_on_the_wine_glass_rack",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/place_the_wine_glass_upside_down_on_the_wine_glass_rack/episode_9b4ab142-9dd4-491b-b383-ebf941988f97/episode.fo.mcap"
+      },
+      {
+        "episode": "episode_6a9d4cd6-9fca-404d-bb66-07ff8731197c",
+        "expected_identity": {
+          "sha256": "b4d264c8939ede1279ee2d5fdf72c8cdbc7fb86a54e868e4d41bfa47a5f688cd",
+          "size_bytes": 72273057,
+          "verification_status": "verified",
+          "verified_fields": [
+            "sha256",
+            "size_bytes"
+          ]
+        },
+        "fk_status_counts": {
+          "derived": 6672
+        },
+        "joint_status_counts": {
+          "intact": 6672
+        },
+        "recovery_status_counts": {
+          "recovered": 6672
+        },
+        "rehash_verified_after_derivation": true,
+        "sha256": "b4d264c8939ede1279ee2d5fdf72c8cdbc7fb86a54e868e4d41bfa47a5f688cd",
+        "size_bytes": 72273057,
+        "source_pose_status_counts": {
+          "missing": 6672
+        },
+        "target_messages": 6672,
+        "task": "take_the_beverage_out_of_the_canvas_bag",
+        "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/take_the_beverage_out_of_the_canvas_bag/episode_6a9d4cd6-9fca-404d-bb66-07ff8731197c/episode.fo.mcap"
+      }
+    ],
+    "modified": false,
+    "rehash_verified_after_derivation": true,
+    "revision": "9659e8ce4b39580f48369cc31bc2e47a217c40e7"
+  }
+}

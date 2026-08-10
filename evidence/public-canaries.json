@@ -1,0 +1,652 @@
+{
+  "files": [
+    {
+      "issue_count": 0,
+      "issue_sample": [],
+      "issue_sample_truncated": false,
+      "missing_topics": [],
+      "passed": true,
+      "schema_version": "abc-mcap-geometry-audit/v1",
+      "source": "fold-skirts.mcap",
+      "thresholds": {
+        "rotation_error_deg": 0.001,
+        "translation_error_m": 1e-05
+      },
+      "topics": {
+        "/left-arm-action": {
+          "arm": "left",
+          "fk": {
+            "compared": 600,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.182619578303747e-06,
+              "mean": 1.8527430791274979e-06,
+              "rmse": 2.076736024217567e-06
+            },
+            "translation_error_m": {
+              "max": 3.6821932062951477e-16,
+              "mean": 1.1350208751727903e-16,
+              "rmse": 1.300852930056217e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 600,
+          "poses": {
+            "intact": 600,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/left-arm-state": {
+          "arm": "left",
+          "fk": {
+            "compared": 600,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.182619578303747e-06,
+              "mean": 1.7717968542526989e-06,
+              "rmse": 1.99741678082251e-06
+            },
+            "translation_error_m": {
+              "max": 4.126162952233366e-16,
+              "mean": 1.1688915879127667e-16,
+              "rmse": 1.3350715578941754e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 600,
+          "poses": {
+            "intact": 600,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        },
+        "/right-arm-action": {
+          "arm": "right",
+          "fk": {
+            "compared": 600,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 3.818191820832846e-06,
+              "mean": 1.69318250105735e-06,
+              "rmse": 1.9462793525541717e-06
+            },
+            "translation_error_m": {
+              "max": 4.1540741810552243e-16,
+              "mean": 1.3500249085297084e-16,
+              "rmse": 1.5221345942779977e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 600,
+          "poses": {
+            "intact": 600,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/right-arm-state": {
+          "arm": "right",
+          "fk": {
+            "compared": 600,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.00455336570039e-06,
+              "mean": 1.8302270132107824e-06,
+              "rmse": 2.0353744074514737e-06
+            },
+            "translation_error_m": {
+              "max": 4.509747244882934e-16,
+              "mean": 1.360785289353972e-16,
+              "rmse": 1.5507975107089753e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 600,
+          "poses": {
+            "intact": 600,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        }
+      },
+      "totals": {
+        "decode_errors": 0,
+        "fk_compared": 2400,
+        "fk_outside_tolerance": 0,
+        "ignored_messages": 0,
+        "intact_poses": 2400,
+        "invalid_poses": 0,
+        "recoverable_invalid_poses": 0,
+        "target_messages": 2400,
+        "unrecoverable_invalid_poses": 0
+      }
+    },
+    {
+      "issue_count": 0,
+      "issue_sample": [],
+      "issue_sample_truncated": false,
+      "missing_topics": [],
+      "passed": true,
+      "schema_version": "abc-mcap-geometry-audit/v1",
+      "source": "fake-fruits.mcap",
+      "thresholds": {
+        "rotation_error_deg": 0.001,
+        "translation_error_m": 1e-05
+      },
+      "topics": {
+        "/left-arm-action": {
+          "arm": "left",
+          "fk": {
+            "compared": 281,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.182619578303747e-06,
+              "mean": 2.1101448827371794e-06,
+              "rmse": 2.3439727749392618e-06
+            },
+            "translation_error_m": {
+              "max": 4.941739743737033e-16,
+              "mean": 1.4813238078487101e-16,
+              "rmse": 1.695265354955835e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 281,
+          "poses": {
+            "intact": 281,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/left-arm-state": {
+          "arm": "left",
+          "fk": {
+            "compared": 281,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.00455336570039e-06,
+              "mean": 2.0017211326700177e-06,
+              "rmse": 2.253699087888081e-06
+            },
+            "translation_error_m": {
+              "max": 5.266250202865052e-16,
+              "mean": 1.3915024796193647e-16,
+              "rmse": 1.6287330813859239e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 281,
+          "poses": {
+            "intact": 281,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        },
+        "/right-arm-action": {
+          "arm": "right",
+          "fk": {
+            "compared": 281,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.517745487845102e-06,
+              "mean": 1.9608772495597775e-06,
+              "rmse": 2.2536990878880805e-06
+            },
+            "translation_error_m": {
+              "max": 3.925231146709438e-16,
+              "mean": 1.3501851690612928e-16,
+              "rmse": 1.5365361608054938e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 281,
+          "poses": {
+            "intact": 281,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/right-arm-state": {
+          "arm": "right",
+          "fk": {
+            "compared": 281,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 3.818191820832846e-06,
+              "mean": 1.7904297662244561e-06,
+              "rmse": 2.093789114016781e-06
+            },
+            "translation_error_m": {
+              "max": 3.885780586188048e-16,
+              "mean": 1.307803895894326e-16,
+              "rmse": 1.5000389090354924e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 281,
+          "poses": {
+            "intact": 281,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        }
+      },
+      "totals": {
+        "decode_errors": 0,
+        "fk_compared": 1124,
+        "fk_outside_tolerance": 0,
+        "ignored_messages": 0,
+        "intact_poses": 1124,
+        "invalid_poses": 0,
+        "recoverable_invalid_poses": 0,
+        "target_messages": 1124,
+        "unrecoverable_invalid_poses": 0
+      }
+    },
+    {
+      "issue_count": 0,
+      "issue_sample": [],
+      "issue_sample_truncated": false,
+      "missing_topics": [],
+      "passed": true,
+      "schema_version": "abc-mcap-geometry-audit/v1",
+      "source": "tshirt-hanger.mcap",
+      "thresholds": {
+        "rotation_error_deg": 0.001,
+        "translation_error_m": 1e-05
+      },
+      "topics": {
+        "/left-arm-action": {
+          "arm": "left",
+          "fk": {
+            "compared": 643,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.00455336570039e-06,
+              "mean": 1.967671412161429e-06,
+              "rmse": 2.183594002824107e-06
+            },
+            "translation_error_m": {
+              "max": 3.885780586188048e-16,
+              "mean": 1.2505512285027455e-16,
+              "rmse": 1.418140205820929e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 643,
+          "poses": {
+            "intact": 643,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/left-arm-state": {
+          "arm": "left",
+          "fk": {
+            "compared": 643,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 3.818191820832846e-06,
+              "mean": 2.14665808143663e-06,
+              "rmse": 2.3443290233847864e-06
+            },
+            "translation_error_m": {
+              "max": 3.7238012298709097e-16,
+              "mean": 1.2905228274379407e-16,
+              "rmse": 1.4469571631666523e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 643,
+          "poses": {
+            "intact": 643,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        },
+        "/right-arm-action": {
+          "arm": "right",
+          "fk": {
+            "compared": 643,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.182619578303747e-06,
+              "mean": 2.009809842957506e-06,
+              "rmse": 2.248561073700804e-06
+            },
+            "translation_error_m": {
+              "max": 5.566705740848049e-16,
+              "mean": 1.3861029972575164e-16,
+              "rmse": 1.5752442662432395e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 643,
+          "poses": {
+            "intact": 643,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/right-arm-state": {
+          "arm": "right",
+          "fk": {
+            "compared": 643,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.182619578303747e-06,
+              "mean": 2.0018090157418635e-06,
+              "rmse": 2.2308456288684724e-06
+            },
+            "translation_error_m": {
+              "max": 5.087681048627601e-16,
+              "mean": 1.3648936958085117e-16,
+              "rmse": 1.5526452197604237e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 643,
+          "poses": {
+            "intact": 643,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        }
+      },
+      "totals": {
+        "decode_errors": 0,
+        "fk_compared": 2572,
+        "fk_outside_tolerance": 0,
+        "ignored_messages": 0,
+        "intact_poses": 2572,
+        "invalid_poses": 0,
+        "recoverable_invalid_poses": 0,
+        "target_messages": 2572,
+        "unrecoverable_invalid_poses": 0
+      }
+    },
+    {
+      "issue_count": 0,
+      "issue_sample": [],
+      "issue_sample_truncated": false,
+      "missing_topics": [],
+      "passed": true,
+      "schema_version": "abc-mcap-geometry-audit/v1",
+      "source": "pasta.mcap",
+      "thresholds": {
+        "rotation_error_deg": 0.001,
+        "translation_error_m": 1e-05
+      },
+      "topics": {
+        "/left-arm-action": {
+          "arm": "left",
+          "fk": {
+            "compared": 718,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.353408482428142e-06,
+              "mean": 2.281619944958873e-06,
+              "rmse": 2.4676510927385117e-06
+            },
+            "translation_error_m": {
+              "max": 3.57874756446653e-16,
+              "mean": 1.218156419322895e-16,
+              "rmse": 1.3652744340220983e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 718,
+          "poses": {
+            "intact": 718,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/left-arm-state": {
+          "arm": "left",
+          "fk": {
+            "compared": 718,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.353408482428142e-06,
+              "mean": 2.1880044690468804e-06,
+              "rmse": 2.3634195086284495e-06
+            },
+            "translation_error_m": {
+              "max": 2.37549462997806e-16,
+              "mean": 9.841913932541123e-17,
+              "rmse": 1.0958419713728161e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 718,
+          "poses": {
+            "intact": 718,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        },
+        "/right-arm-action": {
+          "arm": "right",
+          "fk": {
+            "compared": 718,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.182619578303747e-06,
+              "mean": 1.9492576428178344e-06,
+              "rmse": 2.177869937351405e-06
+            },
+            "translation_error_m": {
+              "max": 4.577566798522237e-16,
+              "mean": 1.4799472359783803e-16,
+              "rmse": 1.694775596870073e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 718,
+          "poses": {
+            "intact": 718,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "action"
+        },
+        "/right-arm-state": {
+          "arm": "right",
+          "fk": {
+            "compared": 718,
+            "failures": 0,
+            "outside_tolerance": 0,
+            "rotation_error_deg": {
+              "max": 4.182619578303747e-06,
+              "mean": 1.9160936188492108e-06,
+              "rmse": 2.16430926268469e-06
+            },
+            "translation_error_m": {
+              "max": 6.667118051786499e-16,
+              "mean": 1.5975099857763813e-16,
+              "rmse": 1.8386108549833314e-16
+            }
+          },
+          "joints": {
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0
+          },
+          "messages": 718,
+          "poses": {
+            "intact": 718,
+            "malformed": 0,
+            "missing": 0,
+            "nonfinite": 0,
+            "recoverable_invalid": 0,
+            "unrecoverable_invalid": 0
+          },
+          "stream": "state"
+        }
+      },
+      "totals": {
+        "decode_errors": 0,
+        "fk_compared": 2872,
+        "fk_outside_tolerance": 0,
+        "ignored_messages": 0,
+        "intact_poses": 2872,
+        "invalid_poses": 0,
+        "recoverable_invalid_poses": 0,
+        "target_messages": 2872,
+        "unrecoverable_invalid_poses": 0
+      }
+    }
+  ],
+  "generator": {
+    "name": "abc-geometry-recovery",
+    "version": "0.1.0"
+  },
+  "passed": true,
+  "schema_version": "abc-mcap-geometry-audit-batch/v1",
+  "totals": {
+    "decode_errors": 0,
+    "files": 4,
+    "fk_compared": 8968,
+    "fk_outside_tolerance": 0,
+    "invalid_poses": 0,
+    "recoverable_invalid_poses": 0,
+    "target_messages": 8968,
+    "unrecoverable_invalid_poses": 0
+  }
+}

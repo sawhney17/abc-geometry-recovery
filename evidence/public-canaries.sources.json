@@ -1,0 +1,50 @@
+{
+  "schema_version": "abc-public-canary-sources/v1",
+  "dataset_id": "Voxel51/ABC-130k",
+  "dataset_revision": "9659e8ce4b39580f48369cc31bc2e47a217c40e7",
+  "selection": "one ungated validation episode from each of four unrelated tasks",
+  "kinematics_model": {
+    "source_revision": "amazon-far/abc@6bc6586721cf0c409ccee80f675a28de9b9b2f5e",
+    "sha256": "2e54ad7f4d8b8e972cb66f869fb656b7564917324ca8a895508dc8b180edbf6c",
+    "target_site": "grasp_site"
+  },
+  "raw_pose_frame_calibration": {
+    "left_arm": "identity from arm_local to shared_bimanual",
+    "right_arm_translation_m": [0.0, -0.61, 0.0],
+    "status": "empirical for this four-episode canary cohort; not emitted in the LeRobot sidecar"
+  },
+  "files": [
+    {
+      "report_source": "fold-skirts.mcap",
+      "task": "fold_and_stack_the_skirts",
+      "episode": "aa015e3a-8cb9-4e03-93a9-900fac9ae6b8",
+      "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/fold_and_stack_the_skirts/episode_aa015e3a-8cb9-4e03-93a9-900fac9ae6b8/episode.fo.mcap",
+      "size_bytes": 15932137,
+      "sha256": "7bd77206bd252919b682f5033d251ed1905e303c552c69a77ccd496c32703490"
+    },
+    {
+      "report_source": "fake-fruits.mcap",
+      "task": "place_and_organize_the_fake_fruits_in_the_fruit_bowl",
+      "episode": "7067ee1f-371a-4956-bf25-25522babd0f7",
+      "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/place_and_organize_the_fake_fruits_in_the_fruit_bowl/episode_7067ee1f-371a-4956-bf25-25522babd0f7/episode.fo.mcap",
+      "size_bytes": 6620888,
+      "sha256": "0f614e673b47e3cf21c4e4c177f6fe84075761a04210155d05889ded0f9498bc"
+    },
+    {
+      "report_source": "pasta.mcap",
+      "task": "place_and_organize_the_pasta_boxes_and_bags_onto_the_shelf",
+      "episode": "c50f525d-aeca-4f24-b3a7-a675792840e5",
+      "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/place_and_organize_the_pasta_boxes_and_bags_onto_the_shelf/episode_c50f525d-aeca-4f24-b3a7-a675792840e5/episode.fo.mcap",
+      "size_bytes": 17784092,
+      "sha256": "01b0c72ee6d7ace25d4ecd62e5446a09cdc5e94dcfc7ee77e3c6ab0913224b11"
+    },
+    {
+      "report_source": "tshirt-hanger.mcap",
+      "task": "place_the_t_shirt_on_the_hanger",
+      "episode": "bcd51baf-c523-4e3b-944f-fd50d4ea963b",
+      "uri": "hf://datasets/Voxel51/ABC-130k@9659e8ce4b39580f48369cc31bc2e47a217c40e7/data/val/place_the_t_shirt_on_the_hanger/episode_bcd51baf-c523-4e3b-944f-fd50d4ea963b/episode.fo.mcap",
+      "size_bytes": 16820691,
+      "sha256": "bd059da73e8ade30cb61063120435e66b2e82c7d0e3c1b79039215460c0f5923"
+    }
+  ]
+}

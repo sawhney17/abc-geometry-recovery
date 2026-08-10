@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If this recovery pipeline or sidecar is useful, please cite this software."
+title: "ABC Geometry Recovery"
+type: software
+authors:
+  - family-names: Sawhney
+    given-names: Aryan
+version: 0.1.0
+date-released: 2026-08-10
+license: Apache-2.0
+repository-code: "https://github.com/sawhney17/abc-geometry-recovery"
+url: "https://sawhney17.github.io/abc-geometry-recovery/"
+abstract: >-
+  Provenance-preserving forward-kinematics recovery for missing ABC-130K
+  end-effector geometry, validated against intact public raw records.
