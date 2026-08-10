@@ -186,6 +186,14 @@ Source MCAPs and LeRobot shards are never modified. Outputs are staged, hashed, 
 the manifest last as a verifiable commit marker. See [`docs/method.md`](docs/method.md) for the data
 contract and [`docs/validation.md`](docs/validation.md) for the full evidence record.
 
+## Upstream integration
+
+[`amazon-far/abc#17`](https://github.com/amazon-far/abc/pull/17) proposes an opt-in export path in
+the official ABC tooling. It derives the same arm-local end-effector representation directly from
+the bundled YAM model while leaving legacy exports unchanged. The pull request is intentionally
+separate from this pinned public-40 repair artifact: it prevents the omission in future exports;
+the release sidecar repairs the already-published preview without rewriting its source files.
+
 ## Sources and licensing
 
 - ABC project and model source: [amazon-far/abc](https://github.com/amazon-far/abc) (Apache-2.0)

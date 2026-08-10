@@ -42,3 +42,6 @@ amazon-far/abc issue #13.
 
 See the interactive proof and calibration-failure toggle at
 https://sawhney17.github.io/abc-geometry-recovery/.
+
+The corresponding opt-in exporter change is proposed upstream in
+https://github.com/amazon-far/abc/pull/17.
